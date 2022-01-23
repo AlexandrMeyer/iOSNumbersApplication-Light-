@@ -61,19 +61,6 @@ class NumbersTableViewCell: UITableViewCell {
         }
     }
     
-//    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
-//        if context.nextFocusedView === self {
-//            coordinator.addCoordinatedAnimations {
-//                self.contentView.backgroundColor = .purple
-//            }
-//        }
-//        else {
-//            coordinator.addCoordinatedAnimations {
-//                self.contentView.backgroundColor = .green
-//            }
-//        }
-//    }
-    
     func configure(with number: Number) {
         NetworkManager.shared.fetchData(from: number.image) { [unowned self] result in
             switch result {

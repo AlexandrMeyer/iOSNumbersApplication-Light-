@@ -10,8 +10,6 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
@@ -31,24 +29,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    
 }
 
-//extension AppDelegate: UISplitViewControllerDelegate {
-//    func splitViewController(
-//        _ splitViewController: UISplitViewController,
-//        collapseSecondary secondaryViewController: UIViewController,
-//        onto primaryViewController: UIViewController) -> Bool {
-//            guard let secondaryNavigationController
-//                    = secondaryViewController as? UINavigationController,
-//                  let entryTableViewController
-//                    = secondaryNavigationController.topViewController
-//                    as? DetailViewController else {
-//                        return false
-//                    }
-//            if entryTableViewController.entry == nil {
-//                return true
-//            }
-//            return false
-//        }
-//}

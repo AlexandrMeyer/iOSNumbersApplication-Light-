@@ -9,7 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var number: Number!
+    var number: Number?
     
     private lazy var imageView: UIImageView = {
         let image = UIImageView()
@@ -61,11 +61,11 @@ class DetailViewController: UIViewController {
     }
     
     private func updateUI() {
-        NetworkManager.shared.fetchData(from: number.image) { [unowned self] result in
+        NetworkManager.shared.fetchData(from: number?.image ?? "") { [unowned self] result in
             switch result {
             case .success(let data):
                 self.imageView.image = UIImage(data: data)
-                self.label.text = number.name
+                self.label.text = number?.name
             case .failure(let error):
                 print(error)
             }
