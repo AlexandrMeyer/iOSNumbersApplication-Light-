@@ -33,7 +33,6 @@ class MasterTableViewController: UITableViewController {
         let number = numbers[indexPath.row]
         cell.configure(with: number)
         
-        
         return cell
     }
     

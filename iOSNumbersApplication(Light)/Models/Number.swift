@@ -1,5 +1,5 @@
 //
-//  Numbers.swift
+//  Number.swift
 //  iOSNumbersApplication(Light)
 //
 //  Created by Александр on 17/01/2022.
